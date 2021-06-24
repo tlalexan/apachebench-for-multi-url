@@ -2348,7 +2348,7 @@ if ( mode == 0 ) {
 #ifdef RSAREF
     R_malloc_init();
 #else
-    OPENSSL_malloc_init();
+    CRYPTO_malloc_init();
 #endif
     SSL_load_error_strings();
     SSL_library_init();
